@@ -22,6 +22,14 @@ var grade3 = 5.0
 
 // your code here
 ```
+Answer:
+var classAvg = ((grade1 + grade2 + grade3) / 3)
+var yourGrade: Double = 5.0
+if yourGrade < classAvg {
+    print ("below average")
+    } else {
+    print ("above average")
+}
 
 ***
 ## Question 2
@@ -33,6 +41,9 @@ let number = 2
 
 // your code here
 ```
+Answer:
+let number = 2
+print (number % 2 == 0 ? "even" : "odd")
 
 ***
 ## Question 3
@@ -45,6 +56,10 @@ var b = 3
 
 // code here
 ```
+Answer:
+var a = 12
+var b = 3
+print (a % b == 0 ? "divisible" : "not divisible" )
 
 ***
 ## Question 4
@@ -58,6 +73,16 @@ var c = 2
 
 // your code here
 ```
+Answer:
+var a = 2
+var b = 3
+var c = 2
+
+if (a / b == 1 || a / b == 1 || b / c == 1){
+    print ("At least two variables have the same value")
+} else {
+    print ("All the values are different")
+}
 
 ***
 ## Question 5
@@ -70,6 +95,25 @@ var eggsAge = 12 // eggs are 12 days old
 
 // your code here
 ```
+Answer (WIP):
+let fridge = (bacon: baconAge, eggs: eggsAge, both: "something")
+
+let answer = fridge
+
+switch answer {
+case(0..<7,_,_):
+    print("You can cook bacon")
+case(7...1000000000,_,_):
+    print("Your eggs are expired")
+case(_,0..<36,_):
+    print("you can cook eggs")
+case
+default:
+    print("Throw them both out")
+}
+
+
+if/ else
 
 ***
 ## Question 6
