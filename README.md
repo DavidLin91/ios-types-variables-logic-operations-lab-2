@@ -96,24 +96,26 @@ var eggsAge = 12 // eggs are 12 days old
 // your code here
 ```
 Answer (WIP):
-let fridge = (bacon: baconAge, eggs: eggsAge, both: "something")
+var baconAge = 6 // the bacon is 6 days old
+var eggsAge = 37 // eggs are 12 days old
+//expiredBacon = 7
+//expiredEggs = 21
+
+let fridge = (bacon: baconAge, eggs: eggsAge)
 
 let answer = fridge
 
 switch answer {
-case(0..<7,_,_):
-    print("You can cook bacon")
-case(7...1000000000,_,_):
-    print("Your eggs are expired")
-case(_,0..<36,_):
-    print("you can cook eggs")
-case
+case(0..<7,21...):
+    print("You can cook bacon, but your eggs are expired")
+case(7...,_):
+    print("You can cook your eggs, but your bacon is expired")
+case(0..<7,0..<36):
+    print("you can cook eggs and bacon")
 default:
     print("Throw them both out")
 }
 
-
-if/ else
 
 ***
 ## Question 6
@@ -126,6 +128,16 @@ let year = 2014
 
 // your code here
 ```
+ANSWER:
+
+var year = 1992
+
+if (year % 4 == 0)  && ((year % 100 != 0) || (year % 400 == 0)){
+    print( "leap year")
+} else {
+    print("not leap year")
+}
+
 
 ***
 ## Question 7
@@ -137,6 +149,13 @@ let randomNum = Int.random(in: 0...100)
 
 // your code here
 ```
+Answer:
+
+let randomNum = Int.random(in: 0...100)
+// even = head
+// odd = tails
+print(randomNum % 2 == 0 ? "heads" : "tails") 
+
 
 Hint: use an if/else block along with the `%` operator
 
@@ -153,6 +172,24 @@ var d = 4
 
 // your code here
 ```
+Answer:
+var a = 5
+var b = 6
+var c = 3
+var d = 4
+
+if a > b && a > b && a > c && a > d {
+    print ("a")
+} else if b > a && b > c && b > d {
+    print("b")
+} else if c > a && c > b && c > d {
+    print("c")
+} else{
+    print("d")
+    
+}
+
+
 
 ***
 ## Question 9
@@ -167,6 +204,10 @@ d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
+Answer:
+a. True
+b. True
+e. True
 
 ***
 ## Question 10
@@ -187,6 +228,9 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
+Answer:
+B. True
+C. True
 
 
 ***
@@ -201,7 +245,8 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
-
+Answer:
+B. True
 
 ***
 ## Question 12
@@ -215,6 +260,8 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
+Answer:
+They all compile
 
 ***
 ## Question 13
@@ -236,6 +283,21 @@ b %= c
 print(a + b + c)
 
 ```
+Answer
+var a = 20
+var b = 5
+var c = 4
+
+a += b  = 25       a= 25
+b -= c  = 1         b = 1
+b * (c + a)  = 29
+(b * c) + a = 29
+b %= a = 0
+b %= c = 1
+
+print(a + b + c) = 30
+
+
 
 ***
 ## Question 14
@@ -253,6 +315,12 @@ let isEqual = div == div2
 
 
 ```
+Answer: 
+1.  2
+2. ?
+3. ?
+
+
 ***
 ## Question 15
 ```swift
@@ -269,7 +337,9 @@ c. n is a Decimal
 d. In is an Int
 
 ```
-
+Answer:
+b. true
+c. true
 # Bonus 
 
 ***
